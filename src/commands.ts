@@ -1,5 +1,10 @@
 import { navigateTo } from "./navigate";
-import type { AvaCommand } from "./types";
+
+export type AvaCommand = {
+  title: string;
+  subtitle?: string;
+  run: () => void;
+};
 
 export const commands: readonly AvaCommand[] = [
   {

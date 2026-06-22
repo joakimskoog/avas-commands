@@ -1,4 +1,4 @@
-import type { AvaCommand } from "./types";
+import { AvaCommand } from "./commands";
 
 type CommandWindow = {
   open: () => void;
