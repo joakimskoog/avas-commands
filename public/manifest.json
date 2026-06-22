@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Ava's Commands",
+  "description": "Keyboard-driven navigation for Avanza.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "Ava's Commands",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.avanza.se/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
